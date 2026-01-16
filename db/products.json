@@ -2,8 +2,8 @@
     {
         "id": "001",
         "name": "Lapis",
-        "price": 0,
-        "quantity": 0
+        "price": 100,
+        "quantity": 195
     },
     {
         "id": "002",

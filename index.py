@@ -10,4 +10,10 @@ categoria = Categoria('Eletronicos')
 
 # categoria.insert()
 
-Product.findAll()
+# print(Product.find(3))
+
+item = 0
+findItem = Product.find(item)
+
+produtoUpdate = Product(findItem['id'], findItem['name'], 100, 195)
+produtoUpdate.update(item)
