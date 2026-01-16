@@ -9,14 +9,6 @@ class Product:
 
     def detalhar(self):
         return self.__dict__
-        # return {
-        #     "id": self.id,
-        #     "name": self.name,
-        #     "price": self.price,
-        #     "quantity": self.quantity,
-        # }
-    
-
 
     def insert(self):
         try:
