@@ -1,38 +1,8 @@
 [
     {
-        "id": "001",
-        "name": "Lapis",
-        "price": 100,
-        "quantity": 195
-    },
-    {
-        "id": "002",
-        "name": "Caneta",
-        "price": 0,
-        "quantity": 0
-    },
-    {
-        "id": "001",
-        "name": "Lapis",
-        "price": 0,
-        "quantity": 0
-    },
-    {
-        "id": "002",
-        "name": "Caneta",
-        "price": 0,
-        "quantity": 0
-    },
-    {
-        "id": "001",
-        "name": "Lapis",
-        "price": 0,
-        "quantity": 0
-    },
-    {
-        "id": "002",
-        "name": "Caneta",
-        "price": 0,
-        "quantity": 0
+        "id": "1421544",
+        "name": "Iphone 16",
+        "price": 15000.0,
+        "quantity": 100
     }
 ]

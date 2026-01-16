@@ -8,17 +8,28 @@ class AbstractCrud:
     def insert(self):
         list = self.find()
         list.append(self.detalhar())
-        with open(self.file, 'w') as file:
-            json.dump(list, file, indent=4)
-        print('Item criado com sucesso!')
+        self.__saveFile(list)
 
     def update(self, index):
         list = self.find()
         list[index] = self.detalhar()
-        
+        self.__saveFile(list)
+
+    @classmethod
+    def delete(cls, index):
+        list = cls.find()
+        try:
+            del list[index]
+            with open(cls.file, "w") as file:
+                json.dump(list, file, indent=4)
+            print('Operação realizada com sucesso!')
+        except:
+            print("Item não encontrado!\nProvavelmente não existem mais dados...")
+
+    def __saveFile(self, list):
         with open(self.file, 'w') as file:
             json.dump(list, file, indent=4)
-        print('Item atualizado com sucesso!')
+        print('Operação realizada com sucesso!')
 
     @classmethod
     def findAll(cls):
