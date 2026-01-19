@@ -32,11 +32,10 @@ class AbstractCrud:
         print('Operação realizada com sucesso!')
 
     @classmethod
-    def findAll(cls):
+    def listAll(cls):
         list = cls.find()
-        # for i, p in enumerate(list):
-        #     print(f'{i} - {p}')
-        return list
+        for i, p in enumerate(list):
+            print(f'{i + 1} - {p}')
 
     @classmethod
     def find(cls, index = None):

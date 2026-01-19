@@ -1,8 +1,8 @@
 [
     {
         "id": "1",
-        "name": "1",
-        "price": 1.0,
-        "quantity": 1
+        "name": "Mountain Bike 2.0",
+        "price": 45000.0,
+        "quantity": 80
     }
 ]
