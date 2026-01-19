@@ -10,3 +10,11 @@ class Product(AbstractCrud):
         self.price = price
         self.quantity = quantity
 
+    def insert(self):
+        products = self.find() or []
+        duplicatedProd = list(filter(lambda p: p.get('id') == self.id, products))
+
+        if duplicatedProd:
+            print('Já existe um produto com esse id!')
+        else:
+            super().insert()

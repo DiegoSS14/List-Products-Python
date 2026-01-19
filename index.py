@@ -7,7 +7,7 @@ class Crud:
     def execute():
         operador = 1
 
-        while operador > 0:
+        while operador != 0:
             Crud.printMenu(['Adicionar', 'Editar', 'ver todos',  'excluir'])
             print()
             operador = int(input('Digite o número do que você deseja fazer: '))
@@ -54,5 +54,6 @@ class Crud:
             for i in menu:
                 print(f'{count} - {i}')
                 count += 1
+            print('===============')
 
 Crud.execute()

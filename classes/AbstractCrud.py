@@ -34,8 +34,9 @@ class AbstractCrud:
     @classmethod
     def findAll(cls):
         list = cls.find()
-        for i, p in enumerate(list):
-            print(f'{i} - {p}')
+        # for i, p in enumerate(list):
+        #     print(f'{i} - {p}')
+        return list
 
     @classmethod
     def find(cls, index = None):
