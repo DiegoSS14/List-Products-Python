@@ -36,6 +36,7 @@ class AbstractCrud:
         list = cls.find()
         for i, p in enumerate(list):
             print(f'{i + 1} - {p}')
+        print()
 
     @classmethod
     def find(cls, index = None):

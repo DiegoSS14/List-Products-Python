@@ -1,8 +1,14 @@
 [
     {
-        "id": "1",
-        "name": "Mountain Bike 2.0",
-        "price": 45000.0,
-        "quantity": 80
+        "id": "001",
+        "name": "Notebook Nitro v15",
+        "price": 5800.0,
+        "quantity": 50
+    },
+    {
+        "id": "002",
+        "name": "Iphone 16",
+        "price": 8000.0,
+        "quantity": 20
     }
 ]

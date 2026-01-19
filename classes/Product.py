@@ -18,3 +18,13 @@ class Product(AbstractCrud):
             print('Já existe um produto com esse id!')
         else:
             super().insert()
+    
+    @staticmethod
+    def getTotalPrice(prod):
+        if isinstance(prod, dict):
+            return prod.get('price', 0) * prod.get('quantity', 0)
+
+        try:
+            return prod.price * prod.quantity
+        except Exception:
+            return 0
